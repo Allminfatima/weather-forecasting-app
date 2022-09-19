@@ -1,2 +1,86 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<html>
+    <head>
+        <title>FORM</title>
+            <style>
+                form 
+                {
+                 margin: 20px ;  
+                 padding: 20px;
+                 border: 25px;
+                 background-color: cornsilk;
+                }
+                button {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;s
+font-size: 14px;
+border-radius: 12px;
+transition-duration: 0.4s;
+  cursor: pointer;
+}
+  button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+            </style>
+            </head>
+                <body>
+            <h1 style="text-align: center;">PERSONAL DETAILS</h1>
+            <form>
+                <fieldset>
+                    <legend style="text-align: center ;"><h2>EXAM FORM:</h2></legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="YOUR ANSWER"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="YOUR ANSWER"><br><br>
+                <label for="gender">please select your gender:</label><br>
+                <input type="checkbox" id="gender1" name="gender1" value="male">
+  <label for="gender1"> Male</label><br>
+  <input type="checkbox" id="gender2" name="gender2" value="female">
+  <label for="gender2"> Female</label><br>
+  <input type="checkbox" id="gender3" name="gender3" value="transgender">
+  <label for="gender3"> Transgender</label><br><br>
+</form>
+                <label for="course">CHOOSE YOUR COURSE:</label><br>
+                <select id="course" name="course">
+                    <option value="B.C.A">B.C.A</option>
+                    <option value="B.A">B.A</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="B.PHARM">B.PHARM</option>
+                    <option value="B.TECH" selected>B.TECH</option>
+                    <option value="B.ed">B.ed</option>
+                    <option value="B.S.C">B.S.C</option>
+                    <option value="B.A LLB">B.A LLB</option>
+                  </select><br><br>
+                   <label for="year">CHOOSE YOUR YEAR:</label><br>
+                  <input list="year" name="year">
+  <datalist id="year">
+    <option value="1st year">
+    <option value="2nd year">
+    <option value="3rd year">
+    <option value="4th year">
+    <option value="5th year">
+  </datalist><br><br>
+  <label for="dateminmax">Enter your birtdate:</label><br>
+  <input type="date" id="dateminmax" name="dateminmax" min="2000-01-31" max="2023-12-31" required><br><br>
+  <label for="email">Enter your email:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="phone">Enter your phone number:</label><br>
+  <input type="phone" id="phone" name="phone" placeholder="1234-5678-90" pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}" size="10" required >
+  <small>Format: 1234-5678-90</small><br><br>
+  <label for="myfile">Upload your current marksheet:</label>
+  <input type="file" id="myfile" name="myfile" required><br><br>
+  <label for="message">Why do you want to apply for this post?:</label><br>
+  <input type="textarea" name="message"  value="your answer......"></textarea><br><br>
+                <button type="button" onclick="alert('Are you confirm, you want to submit the form')">SUBMIT</button>
+                <button type="reset" onclick="alert('Are you sure, you want to reset the form')">RESET</button>
+            </fieldset>
+           </body>
+</html>
